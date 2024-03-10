@@ -83,10 +83,39 @@ h1{
     background-color: #fff ;
     padding: 10px 20px;
     border-radius: 10px;
+    font-size: 22px;
 }
 .my-message{
     align-self: flex-end;
 }
 .incoming-message{
     align-self: flex-start;
+}
+h1{
+    margin: 0 40%;
+    margin-bottom: 20px;
+}
+#inp2{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+#form button{
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+}
+input{
+    border: none;
+}
+input:focus {
+    border: 2px solid blue; 
+    outline: none; 
 }
