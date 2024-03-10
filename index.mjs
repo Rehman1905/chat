@@ -89,6 +89,7 @@ document.querySelector('.btnMain1').addEventListener('click',e=>{
 const mesaj=document.querySelector('#mesaj')
 document.querySelector('#send').addEventListener('click',function(e){
     e.preventDefault()
+    console.log(mesaj.value)
     if(mesaj.value!==''){
         const user=JSON.parse(localStorage.getItem('user'))
         const snapshop=push(ref(db,'user'))
