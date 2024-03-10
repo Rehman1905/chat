@@ -1,4 +1,4 @@
-import db from '/firebase.mjs';
+import db from './firebase.mjs';
 import { ref, set, get, push ,onValue} from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js'
 const section1=document.querySelector('#section1')
 const section2=document.querySelector('#section2')
