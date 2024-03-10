@@ -44,6 +44,7 @@ document.querySelector('#btn').addEventListener('click',async function(e){
 
 })
 
+
 document.querySelector('#back').addEventListener('click',function(e){
     e.preventDefault()
     ad.innerHTML=''
@@ -116,10 +117,14 @@ document.querySelector('#send').addEventListener('click',function(e){
                         newDiv.classList.add('incoming-message')
                     }
                 }
+
             })
+
         })
         ge()
+
     }else{
+        
         alert('BOSH')
     }
 })
