@@ -98,32 +98,9 @@ document.querySelector('#send').addEventListener('click',function(e){
             user
         }).then(()=>{
             mesaj.value=''
-            get(ref(db,'chat')).then(e=>{
-                const user=JSON.parse(localStorage.getItem('user'))
-                const chat=e.val()
-                const messageDiv=document.querySelector('#chat')
-                messageDiv.classList.add('messageDiv')
-                messageDiv.innerHTML=''
-                for(let i in chat){
-                    const message=chat[i]
-                    const newDiv=document.createElement('div')
-                    newDiv.classList.add('messageDiv')
-                    newDiv.innerHTML=`${message.user.username}:${message.text}`
-                      messageDiv.append(newDiv) 
-                      console.log(user.key)
-                      console.log(message.user.key)
-                    if (user.key === message.user.key) {
-                        newDiv.classList.add('my-message')
-                    } else {
-                        newDiv.classList.add('incoming-message')
-                    }
-                }
-
-            })
+            
 
         })
-        ge()
-
     }else{
         
         alert('BOSH')
@@ -152,4 +129,4 @@ function ge(){
         }
     })
 }
-ge()
+setInterval(ge,1000)
