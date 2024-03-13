@@ -32,16 +32,16 @@ document.querySelector('#btn').addEventListener('click',async function(e){
 
         }else{
             if(adSon==use.username&&paswod!=use.password){
+                alert('password is incorrect')
+
                 password.style.border='2px solid red'
-                password.addEventListener('focus', function() {
-                    password.style.borderColor = 'red'; 
-                });
-                password.addEventListener('blur', function() {
-                    password.style.borderColor = ''; 
-                });
+                
+                
             }else{
+                alert('sign up')
                 ad.style.border='2px solid red'
                 password.style.border='2px solid red'
+                ad.value=''
             }
             password.value=''
             section1.style.display='flex'
@@ -65,6 +65,8 @@ const pasword2=document.querySelector('#password2')
 const section3=document.querySelector('#section3')
 document.querySelector('#sign').addEventListener('click',e=>{
     e.preventDefault()
+    password.style.border='none'
+    ad.style.border='none'
     section1.style.display='none'
     section3.style.display='flex'
 })
